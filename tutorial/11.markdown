@@ -1,5 +1,5 @@
 The return value fo [SADD](#help) is as important as the one of [SREM](#help).
-If the element we try to add is already inside, then 1 is returned, otherwise
+If the element we try to add is not inside, then 1 is returned, otherwise
 [SADD](#help) returns zero:
 
 <pre></code>
