@@ -44,6 +44,6 @@ making the key permanent again.
 
 <pre><code>
     <a href="#run">SET resource:lock "Redis Demo 3" EX 5</a>
-    <a href="#run">PRESIST resource:lock</a>
+    <a href="#run">PERSIST resource:lock</a>
     <a href="#run">TTL resource:lock</a> => -1
 </code></pre>
