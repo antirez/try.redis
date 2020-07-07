@@ -5,7 +5,7 @@ the returned (and removed) elements are totally casual in this case.
 
 <pre></code>
     <a href="#run">SADD letters a b c d e f</a> => 6
-    <a href="#run">SPOP letters 2</a> => 1) "c" 2) "a"
+    <a href="#run">SPOP letters</a> => "c"
 </code></pre>
 
 The argument of [SPOP](#help) after the name of the key, is the number
@@ -14,7 +14,7 @@ of elements we want it to return, and remove from the set.
 Now the set will have just the remaining elements:
 
 <pre></code>
-    <a href="#run">SMEMBERS letters</a> => 1) "b" 2) "d" 3) "e" 4) "f"
+    <a href="#run">SMEMBERS letters</a> => 1) "a" 2) "b" 3) "d" 4) "e" 5) "f"
 </code></pre>
 
 There is also a command to return random elements without removing such
