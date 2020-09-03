@@ -99,7 +99,7 @@ class TestTryRedis < MiniTest::Test
 
   def test_eval_responds_to_tutorial
     command "tutorial"
-    body_was :notification, "<p>Redis is what is called a key-value store"
+    body_was :notification, "<p>Redis is in the family of databases"
   end
 
   def test_eval_responds_to_prev
@@ -109,13 +109,13 @@ class TestTryRedis < MiniTest::Test
 
   def test_eval_responds_to_next
     command "next"
-    response_was(/{"notification":"<p>Redis is what is called a key-value store/)
-    body_was :notification, "<p>Redis is what is called a key-value store"
+    response_was(/{"notification":"<p>Redis is in the family of databases/)
+    body_was :notification, "<p>Redis is in the family of databases"
   end
 
   def test_eval_responds_to_tutorial_id
     command "t2"
-    body_was :notification, "<p>Other common operations provided"
+    body_was :notification, "<p>Other basic operations provided by Redis"
   end
 
   def test_eval_responds_to_namespace
