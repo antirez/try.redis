@@ -379,9 +379,9 @@ class TestTryRedis < MiniTest::Test
       command_with_body "ZREMRANGEBYLEX myzset [b [d", response: "(integer) 3"
       assert_equal 4, @r.zcard("lex:myzset")
 
-      command_with_body "zlexcount", error: /ERR wrong number of arguments for 'zlexcount' command/
-      command_with_body "zlexcount a", error: /ERR wrong number of arguments for 'zlexcount' command/
-      command_with_body "zlexcount a b c d", error: /ERR wrong number of arguments for 'zlexcount' command/
+      command_with_body "zlexcount", error: /\(error\) wrong number of arguments \(given 1, expected 3\)/
+      command_with_body "zlexcount a", error: /\(error\) wrong number of arguments \(given 1, expected 3\)/
+      command_with_body "zlexcount a b c d", error: /\(error\) wrong number of arguments \(given 4, expected 3\)/
     end
   end
 
