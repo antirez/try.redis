@@ -1,13 +1,21 @@
 %html
 
   %head
-
+    :javascript
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-T6QK835');
     %title Try Redis
     %link{"rel" => "shortcut icon", "href" => "/images/favicon.png"}
     %link{"rel" => "stylesheet", "href" => "/style.css"}
 
   %body
-
+    %noscript
+      %iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-T6QK835"
+              height="0" width="0"
+              style="display:none;visibility:hidden")
     #header
       %img{"src" => "/images/try-redis-500x50.png", "width" => 500, "height" => 50}
 
@@ -21,8 +29,8 @@
     #footer
       :markdown
         This site is open source software, you can find
-        the current version [here](https://github.com/antirez/try.redis).
-        It's now maintained and hosted by [antirez](https://twitter.com/antirez).
+        the current version [here](https://github.com/redis/try.redis).
+        It's now maintained by the [Redis community](https://redis.io/community) and hosted by Redis Labs.
 
     %script{"type" => "application/x-javascript", "src" => "/javascripts/jquery.min.js"}
     %script{"type" => "application/x-javascript", "src" => "/javascripts/underscore-min.js"}

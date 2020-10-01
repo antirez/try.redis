@@ -12,12 +12,12 @@ client at the same time, elements in the head or the tail of the list.
 [RPOP](#help) removes the last element from the list and returns it.
 
 <pre><code>
-    <a href="#run">RPOP friends</a> => "3"
+    <a href="#run">RPOP friends</a> => "Bob"
 </code></pre>
 
-Note that the list now only has four elements:
+Note that the list now only has one element:
 
 <pre><code>
-    <a href="#run">LLEN friends</a> => 4
-    <a href="#run">LRANGE friends 0 -1</a> => 1) "Alice" 2) "Bob" 3) "1" 4) "2"
+    <a href="#run">LLEN friends</a> => 1
+    <a href="#run">LRANGE friends 0 -1</a> => 1) "Alice"
 </code></pre>

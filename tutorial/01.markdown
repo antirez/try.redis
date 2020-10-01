@@ -5,7 +5,7 @@ called a value, inside a key. This data can later be retrieved only if we know
 the exact key used to store it.
 
 Often Redis it is called a data structure server because it has outer key-value shell, but each
-value can contain a complex data structure, such as a string, a list, a hashes, or ordered data
+value can contain a complex data structure, such as a string, a list, a hash, or ordered data
 structures called sorted sets as well as probabilistic data structures like hyperloglog.
 
 As a first example, we can use the command [SET](#help) to store the value "fido" at key "server:name":

@@ -1,7 +1,7 @@
 Both [RPUSH](#help) and [LPUSH](#help) commands are variadic, so you can specify multiple elements in the same command execution.
 
 <pre><code>
-    <a href="#run">RPUSH friends 1 2 3</a> => 6
+    <a href="#run">RPUSH friends 1 2 3</a> => 4
 </code></pre>
 
 <span class="tip">
@@ -11,6 +11,6 @@ Tip: RPUSH and LPUSH return the total length of the list after the operation.
 You can also use [LLEN](#help) to obtain the current length of the list.
 
 <pre><code>
-    <a href="#run">LLEN friends</a> => 6
+    <a href="#run">LLEN friends</a> => 4
 </code></pre>
 

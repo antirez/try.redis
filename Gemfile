@@ -14,7 +14,7 @@ end
 gem 'sinatra', '~> 1.4.3', :require => 'sinatra/base'
 gem 'haml', '~> 4.0.0'
 gem 'sass', '~>3.2.7'
-gem 'redis', '~>3.0.0'
+gem 'redis', '~>4.2.1'
 gem 'redis-namespace', '~>1.3.1'
 gem 'rdiscount', '~>2.1.7'
 gem 'puma', '~>2.3.1'

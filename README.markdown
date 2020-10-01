@@ -3,16 +3,11 @@ Try Redis
 
 ---
 
-**try.redis is unmaintained since March 2018. 
-The online instance will be kept running, but won't receive updates.**
-
----
-
 
 [Try Redis](http://try.redis.io) is a demonstration of the Redis data structure server.
 
 ### Info
 
-This project was started by [@alexmchale](https://github.com/alexmchale/) back in 2010.  In January 2013 I took over the maintenance and it's running on my server since then.
+This project was started by [@alexmchale](https://github.com/alexmchale/) back in 2010.  In January 2013 [badboy](https://github.com/badboy/) took over the maintenance and hosting of the service, and in February 2020 [antirez](https://github.com/antirez/). It is now being maintained by the [Redis community](https://redis.io/community).
 
-Contributions, improvements, comments and suggestions welcome. Just file an [issue](https://github.com/badboy/try.redis/issues).
+Contributions, improvements, comments and suggestions welcome. Just file an [issue](https://github.com/redis/try.redis/issues).
